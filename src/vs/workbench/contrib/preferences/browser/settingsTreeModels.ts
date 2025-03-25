@@ -343,7 +343,7 @@ export class SettingsTreeSettingElement extends SettingsTreeElement {
 		this.defaultValueSource = this.setting.nonLanguageSpecificDefaultValueSource;
 
 		if (inspected.policyValue !== undefined) {
-			this.hasPolicyValue = true;
+			this.hasPolicyValue = false;
 			isConfigured = false; // The user did not manually configure the setting themselves.
 			displayValue = inspected.policyValue;
 			this.scopeValue = inspected.policyValue;
